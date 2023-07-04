@@ -1,0 +1,14 @@
+C:\Users\phili\OneDrive - HTBLuVA Mödling\Schule\3.Klasse\2.Semester\POS\Beispiele\MVVMUebung\bin\Debug\Data.dll
+C:\Users\phili\OneDrive - HTBLuVA Mödling\Schule\3.Klasse\2.Semester\POS\Beispiele\MVVMUebung\bin\Debug\Data.pdb
+C:\Users\phili\OneDrive - HTBLuVA Mödling\Schule\3.Klasse\2.Semester\POS\Beispiele\MVVMUebung\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\phili\OneDrive - HTBLuVA Mödling\Schule\3.Klasse\2.Semester\POS\Beispiele\MVVMUebung\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\phili\OneDrive - HTBLuVA Mödling\Schule\3.Klasse\2.Semester\POS\Beispiele\MVVMUebung\Data\obj\Debug\Data.dll
+C:\Users\phili\OneDrive - HTBLuVA Mödling\Schule\3.Klasse\2.Semester\POS\Beispiele\MVVMUebung\Data\obj\Debug\Data.pdb
+C:\Users\phili\OneDrive - HTBLuVA Mödling\Schule\3.Klasse\2.Semester\POS\Beispiele\MVVMUebung\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\phili\Desktop\PayDayPanicMongo\PhipsiGaming\bin\Debug\Data.dll
+C:\Users\phili\Desktop\PayDayPanicMongo\PhipsiGaming\bin\Debug\Data.pdb
+C:\Users\phili\Desktop\PayDayPanicMongo\PhipsiGaming\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\phili\Desktop\PayDayPanicMongo\PhipsiGaming\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\phili\Desktop\PayDayPanicMongo\PhipsiGaming\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\phili\Desktop\PayDayPanicMongo\PhipsiGaming\Data\obj\Debug\Data.dll
+C:\Users\phili\Desktop\PayDayPanicMongo\PhipsiGaming\Data\obj\Debug\Data.pdb

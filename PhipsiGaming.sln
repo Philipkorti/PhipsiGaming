@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhipsiGaming", "MVVMUebung\PhipsiGaming.csproj", "{65F436BE-3650-450E-80C6-21489E205918}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D70832B1-D998-44C1-B893-4494FCE58601} = {D70832B1-D998-44C1-B893-4494FCE58601}
+		{F450C12E-46A7-49D8-A1B2-157023FFBF17} = {F450C12E-46A7-49D8-A1B2-157023FFBF17}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D70832B1-D998-44C1-B893-4494FCE58601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{F450C12E-46A7-49D8-A1B2-157023FFBF17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D70832B1-D998-44C1-B893-4494FCE58601} = {D70832B1-D998-44C1-B893-4494FCE58601}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65F436BE-3650-450E-80C6-21489E205918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F436BE-3650-450E-80C6-21489E205918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F436BE-3650-450E-80C6-21489E205918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F436BE-3650-450E-80C6-21489E205918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70832B1-D998-44C1-B893-4494FCE58601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70832B1-D998-44C1-B893-4494FCE58601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70832B1-D998-44C1-B893-4494FCE58601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70832B1-D998-44C1-B893-4494FCE58601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F450C12E-46A7-49D8-A1B2-157023FFBF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F450C12E-46A7-49D8-A1B2-157023FFBF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F450C12E-46A7-49D8-A1B2-157023FFBF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F450C12E-46A7-49D8-A1B2-157023FFBF17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {598E6671-9EEE-4803-BD3E-38B9BF3D26F9}
+	EndGlobalSection
+EndGlobal
