@@ -8,15 +8,24 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <StackPanel>
-            <Button Command="{Binding DownloadComman}" Content="{Binding PlayDownload}"></Button>
-            <TextBlock Grid.Row="1" Text="{Binding DownloadStatus}"></TextBlock>
-            <ProgressBar Value="{Binding Percent}"></ProgressBar>
-        </StackPanel>
-        
-        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Source="\Bilder\PayDayIcon.png"/>
+            <StackPanel Margin="10,20,0,0" VerticalAlignment="Center" Grid.Row="1">
+                <Button Command="{Binding DownloadComman}" Content="{Binding PlayDownload}" VerticalAlignment="Center" Background="Blue" Foreground="White" BorderBrush="Transparent" Height="50"></Button>
+                <StackPanel Visibility="{Binding Viable}">
+                    <ProgressBar Value="{Binding Percent}" Height="10" Margin="0,10,0,0"></ProgressBar>
+                    <TextBlock Grid.Row="1" Text="{Binding DownloadStatus}"></TextBlock>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>

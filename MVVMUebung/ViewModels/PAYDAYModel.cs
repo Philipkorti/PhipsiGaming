@@ -22,11 +22,13 @@ namespace MVVMUebung.ViewModels
         private string downloadStatus;
         private string playDownload;
         private int percent;
+        private string visable;
 
 
         public PAYDAYModel(IEventAggregator eventAggregator): base(eventAggregator) 
         {
             this.DownloadComman = new ActionCommand(this.DownloadCommandExecute, this.DownloadCommandCanExecute);
+            this.Viable = "hidden";
         }
 
         public string DownloadStatus
@@ -36,6 +38,16 @@ namespace MVVMUebung.ViewModels
             { 
                 downloadStatus = value; 
                 this.OnPropertyChanged(nameof(DownloadStatus));
+            }
+        }
+
+        public string Viable
+        {
+            get { return this.visable; }
+            set
+            {
+                this.visable = value;
+                this.OnPropertyChanged(nameof(Viable));
             }
         }
 
@@ -65,7 +77,7 @@ namespace MVVMUebung.ViewModels
             bytesReceived = bytesReceived / 1024;
             double bytesTotal = e.TotalBytesToReceive / 1024;
             bytesTotal = bytesTotal / 1024;
-            this.DownloadStatus = $"Downloaded {Math.Round(bytesReceived, 2)} of {Math.Round(bytesTotal,2)} MB. {e.ProgressPercentage}% completed.";
+            this.DownloadStatus = bytesReceived+"/"+bytesTotal;
             this.Percent = e.ProgressPercentage;
         }
 
@@ -80,7 +92,7 @@ namespace MVVMUebung.ViewModels
             {
                 MessageBox.Show(ex.Message);
             }
-           
+            this.Viable = "hidden";
         }
 
         public ICommand DownloadComman { get; private set; }
@@ -108,6 +120,7 @@ namespace MVVMUebung.ViewModels
             }
             else
             {
+                this.Viable = "visable";
                 using (var client = new WebClient())
                 {
                     Thread.Sleep(1000);
