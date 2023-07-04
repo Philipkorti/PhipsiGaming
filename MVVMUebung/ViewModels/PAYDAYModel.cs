@@ -89,7 +89,7 @@ namespace MVVMUebung.ViewModels
         {
             
 
-            if (Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\PaydayPanic -main"))
+            if (Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\PaydayPanic-main"))
             {
                 this.PlayDownload = "Play";
             }
@@ -102,9 +102,9 @@ namespace MVVMUebung.ViewModels
 
         private void DownloadCommandExecute(object parameter)
         {
-            if (Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\PaydayPanic -main"))
+            if (Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\PaydayPanic-main"))
             {
-                Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\PaydayPanic -main\bin\Debug\PayDay.exe");
+                Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\PaydayPanic-main\PayDay\bin\Debug\PayDay.exe");
             }
             else
             {
