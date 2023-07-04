@@ -73,7 +73,7 @@ namespace MVVMUebung.ViewModels
         {
             this.DownloadStatus = "Download completed!";
             Thread.Sleep(2000);
-            ZipFile.ExtractToDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\PhipsiGaming-main\bin\Debug\main.zip", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games");
+            ZipFile.ExtractToDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\main.zip", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games");
         }
 
         public ICommand DownloadComman { get; private set; }
@@ -106,7 +106,7 @@ namespace MVVMUebung.ViewModels
                     Thread.Sleep(1000);
                     client.DownloadProgressChanged += ClientDownloadProgressChanged;
                     client.DownloadFileCompleted += ClientDownloadCompleted;
-                    client.DownloadFileAsync(new Uri("https://github.com/Philipkorti/PaydayPanic/archive/refs/heads/main.zip"), "main.zip");
+                    client.DownloadFileAsync(new Uri("https://github.com/Philipkorti/PaydayPanic/archive/refs/heads/main.zip"), Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\main.zip");
                 }
             }
             
