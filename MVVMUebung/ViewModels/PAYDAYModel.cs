@@ -77,7 +77,7 @@ namespace MVVMUebung.ViewModels
             bytesReceived = bytesReceived / 1024;
             double bytesTotal = e.TotalBytesToReceive / 1024;
             bytesTotal = bytesTotal / 1024;
-            this.DownloadStatus = bytesReceived+"/"+bytesTotal;
+            this.DownloadStatus = bytesReceived+"/"+bytesTotal + " MB";
             this.Percent = e.ProgressPercentage;
         }
 
