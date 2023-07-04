@@ -73,7 +73,14 @@ namespace MVVMUebung.ViewModels
         {
             this.DownloadStatus = "Download completed!";
             Thread.Sleep(2000);
-            ZipFile.ExtractToDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\main.zip", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games");
+            try
+            {
+                ZipFile.ExtractToDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games\main.zip", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PhipsiGaming\Games");
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
         }
 
         public ICommand DownloadComman { get; private set; }
